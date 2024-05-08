@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência de Viagens</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #destinos {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .destino {
+            flex: 0 0 calc(33.33% - 20px);
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .destino:hover {
+            transform: translateY(-5px);
+        }
+
+        .destino img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .destino h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .destino p {
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Encontre sua próxima aventura!</h1>
+        <div id="destinos">
+            <div class="destino">
+                <img src="destino1.jpg" alt="Destino 1">
+                <h3>Destino 1</h3>
+                <p>Descubra as maravilhas deste lugar incrível.</p>
+            </div>
+            <div class="destino">
+                <img src="destino2.jpg" alt="Destino 2">
+                <h3>Destino 2</h3>
+                <p>Explore as paisagens deslumbrantes deste destino.</p>
+            </div>
+            <div class="destino">
+                <img src="destino3.jpg" alt="Destino 3">
+                <h3>Destino 3</h3>
+                <p>Viva uma aventura única neste lugar cheio de história.</p>
+            </div>
+        </div>
+        <a href="#" class="cta-button">Explorar Mais Destinos</a>
+    </div>
+</body>
+</html>

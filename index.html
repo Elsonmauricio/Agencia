@@ -4,16 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Agência de Viagens</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 300px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #666;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: calc(100% - 12px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            margin-bottom: 10px; /* Adicionado para separar o botão de login do botão de entrar como olheiro */
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <h1>Login</h1>
-    <form action="login.php" method="POST">
-        <label for="username">Nome de usuário:</label>
-        <input type="text" id="username" name="username" required><br>
-        <label for="password">Senha:</label>
-        <input type="password" id="password" name="password" required><br>
-        <button type="submit">Login</button>
-    </form>
-    <p>Não tem uma conta? <a href="registro.html">Registre-se aqui</a>.</p>
+    <div class="container">
+        <h1>Login</h1>
+        <form action="login.php" method="POST">
+            <label for="username">Nome de usuário:</label>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required><br>
+            <button type="submit">Login</button>
+        </form>
+        <p>Não tem uma conta? <a href="registro.html">Registre-se aqui</a>.</p>
+        
+        <!-- Botão para entrar como olheiro -->
+        <a href="Pagina inicial.html"><button>Faço login depois.</button></a>
+    </div>
 </body>
 </html>
