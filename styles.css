@@ -1,0 +1,91 @@
+/* styles.css */
+
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background: #007BFF;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Estilo da navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilo das seções */
+section {
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo das imagens dos destinos e pacotes */
+.destino img, .pacote img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Estilo dos botões */
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #007BFF;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo das seções de destinos e pacotes */
+#destinos, #pacotes {
+    display: flex; /* Usar flexbox para alinhar os itens na mesma linha */
+    justify-content: space-around; /* Espaçar os itens uniformemente */
+    flex-wrap: wrap; /* Permitir que os itens se movam para a próxima linha se não houver espaço */
+}
+
+/* Estilo dos itens de destino e pacote */
+.destino, .pacote {
+    flex: 1; /* Permitir que os itens cresçam igualmente */
+    margin: 10px; /* Margem entre os itens */
+    max-width: 300px; /* Largura máxima para os itens */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para os itens */
+    border-radius: 5px; /* Bordas arredondadas */
+    background: white; /* Fundo branco para os itens */
+}
